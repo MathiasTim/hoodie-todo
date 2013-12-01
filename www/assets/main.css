@@ -17,6 +17,7 @@ body {
   background: #fff;
   margin-top: -10px;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
+  width: 100%;
 }
 
 
@@ -43,6 +44,36 @@ html[data-hoodie-account-status=signedout] .hoodie-account-signedout {
   padding: 10px;
   float: left;
   width: 100%;
+}
+
+.edit {
+  float: right;
+}
+
+#todolist {
+  margin: 1em 0;
+  width: 300px;
+}
+
+.item {
+  background-color: gray;
+  color: white;
+  padding: .5em;
+  margin: 0 0 .5em 0;
+}
+
+.item .delete {
+  display: none;
+  cursor: pointer;
+  float: right;
+}
+
+.item input[type=checkbox] {
+  margin: 0 5px 0 0;
+}
+
+.item[data-done="true"] {
+  text-decoration: line-through;
 }
 
 .copy {

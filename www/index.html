@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/vendor/prism/prism.css">
     <link rel="stylesheet" href="assets/main.css">
   </head>
   <body>
@@ -68,9 +67,12 @@
       </div>
 
       <div class="content">
-        <ul id="todolist"></ul>
+        <div class="hoodie-account-signedin">
+            <button class="edit" data-state="edit">Edit</button>
+            <input type="text" id="todoinput"  placeholder="new todo ↵" />
 
-        <input type="text" id="todoinput"  placeholder="new todo ↵" />
+            <ul id="todolist"></ul>
+        </div>
       </div>
 
       <footer class="copy">
@@ -80,7 +82,6 @@
 
     <script src="assets/vendor/jquery-1.9.1.js"></script>
     <script src="assets/vendor/bootstrap/bootstrap.js"></script>
-    <script src="assets/vendor/prism/prism.js"></script>
     <!-- Load the dynamic version of hoodie.js that includes all the plugin code-->
     <script src="/_api/_files/hoodie.js"></script>
 
