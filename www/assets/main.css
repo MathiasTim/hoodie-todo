@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Hoodie Sign In / Sign Up / Sign out stylings
+   ========================================================================== */
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.container {
+  position: relative;
+  background: #fff;
+  margin-top: -10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+
+/* hide contents until we know if user is signed in or not */
+body .hoodie-account-signedin,
+body .hoodie-account-signedout,
+body .hoodie-account-error {
+  display: none;
+}
+
+html[data-hoodie-account-status=signedin]  .hoodie-account-signedin,
+html[data-hoodie-account-status=error]     .hoodie-account-error,
+html[data-hoodie-account-status=signedout] .hoodie-account-signedout {
+  display: block;
+}
+
+.hoodie-accountbar {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.content {
+  padding: 10px;
+  float: left;
+  width: 100%;
+}
+
+.copy {
+  padding: 10px;
+  margin: 30px 0 0;
+  border-radius: 5px;
+}
+.hero-unit,
+.copy {
+  background: white;
+  margin: 0;
+  border-radius: 0;
+}
+.copy p {
+  margin: 0;
+}
